@@ -1,0 +1,17 @@
+<!-- copy form from new.ejs and make changes -->
+<!-- get rid of action and method -->
+<form action="/dinosaurs/<%= dinoId %>/?_method=PUT" method="POST">
+    <!-- for and id attributes need to be the same -->
+    <div>
+        <label for="dinosaurType">Type:</label>
+        <input type="text" name="type" id="dinosaurType" value="<%= dino.type %>">
+    </div>
+
+    <div>
+        <label for="dinosaurName">Name: </label>
+        <input type="text" name="name" id="dinosaurName" value="<%= dino.name %>">
+    </div>
+
+    <button type="submit">Update This Dino!</button>
+    <!-- change the button text -->
+</form>

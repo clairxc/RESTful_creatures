@@ -1,0 +1,15 @@
+<!-- action is NOT the current one we are in, its the URL pattern of where we want our app to go NEXT once the form has been submitted -->
+<form action="/dinosaurs" method="post">
+    <!-- for and id attributes need to be the same -->
+    <div>
+        <label for="dinosaurType">Type:</label>
+        <input type="text" name="type" id="dinosaurType">
+    </div>
+
+    <div>
+        <label for="dinosaurName">Name: </label>
+        <input type="text" name="name" id="dinosaurName">
+    </div>
+
+    <button type="submit">Add a New Dino!</button>
+</form>
