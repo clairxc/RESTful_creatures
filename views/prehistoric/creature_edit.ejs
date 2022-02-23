@@ -1,0 +1,17 @@
+<!-- copy form from new.ejs and make changes -->
+<!-- get rid of action and method -->
+<form action="/prehistoric_creatures/<%= creatureId %>/?_method=PUT" method="POST">
+    <!-- for and id attributes need to be the same -->
+    <div>
+        <label for="creatureType">Type:</label>
+        <input type="text" name="type" id="creatureType" value="<%= creature.type %>">
+    </div>
+
+    <div>
+        <label for="creatureImg">Image URL: </label>
+        <input type="text" name="name" id="creatureImg" value="<%= creature.img_url %>">
+    </div>
+    
+    <!-- change the button text -->
+    <button type="submit">Update This Prehistoric Creature!</button>
+</form>
